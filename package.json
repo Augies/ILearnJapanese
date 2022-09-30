@@ -1,0 +1,12 @@
+{
+    "name": "ilearnjapanese",
+    "private": true,
+    "workspaces": ["ui","cdk"],
+    "version": "0.0.0",
+    "scripts": {
+        "build": "yarn workspaces foreach run build",
+        "test": "yarn workspaces foreach run test",
+        "cdk": "yarn workspace ilearnjapanese-cdk cdk"
+    },
+    "packageManager": "yarn@3.2.3"
+}

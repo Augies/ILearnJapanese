@@ -10,14 +10,14 @@
 ## Table of Contents
 
 1. [About](#about)
-2. [Features](#features)
+2. [Technology](#technology)
+3. [Features](#features)
     1. [Vocabulary and Kanji Libraries](#feature.library)
     2. [Hiragana and Katakana Memorization](#feature.hira-kata)
     3. [Verb Particles](#feature.particles)
     4. [Conjugation](#feature.conjugation)
     5. [Vocab Memorization](#feature.vocab-mem)
     6. [Kanji Memorization](#feature.kanji-mem)
-  
 
 # About <a name="about"></a>
 
@@ -39,7 +39,13 @@ Contributions are welcome of any kind, including assets, documentation, code, an
 
 This project is under the [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/).
 
-  
+# Technology <a name="technology"></a>
+
+The ILearnJapanese website is planned to be a Vue Single-Page Application (located at `./ui`) using Bootstrap for styling. The site is compiled with Vite and served via AWS S3.
+
+Any backend functionality is planned to be done via other AWS services. 
+Because this is an open-source project, emphasis will be put on minimizing costs and using a stateless architecture.
+
 
 # Features <a name="features"></a>
 
@@ -104,16 +110,16 @@ This is an example of what a library could look like. Note that a Kanji library 
         {
             "name": "Lesson 1",
             "set": [
-                Vocabulary Terms go here...
+                // Vocabulary Terms go here...
             ]
         },
         {
             "name": "Lesson 2",
             "set": [
-                Vocabulary Terms go here...
+                // Vocabulary Terms go here...
             ]
         },
-        ...
+        // ...
     ],
 }
 ```
